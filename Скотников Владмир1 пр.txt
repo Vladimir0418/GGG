@@ -1,0 +1,35 @@
+kniga.java
+
+package com.company;
+
+public class kniga {
+    String nazvanee;
+    String avtor;
+    int kolvostr;
+    int godvep;
+}
+
+Main.Java
+package com.company;
+        import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner zap = new Scanner(System.in);
+        kniga a = new kniga();
+
+        System.out.println("Ââåäèòå íàçâàíèå êíèãè");
+        a.nazvanee = zap.nextLine();
+        System.out.println("Ââåäèòå àâòîðà");
+        a.avtor = zap.nextLine();
+        System.out.println("Ââåäèòå êîëè÷åñòâî ñòðàíèö â êíèãå");
+        a.kolvostr = zap.nextInt();
+        System.out.println("Ââåäèòå ãîä âûïóñêà");
+        a.godvep = zap.nextInt();
+        System.out.println("íàçâàíèå êíèãè:" + a.nazvanee);
+        System.out.println("êîë-âî ñòðàíèö:" + a.kolvostr);
+        System.out.println("àâòîð:" + a.avtor);
+        System.out.println("ãîä âûïóñêà:" + a.godvep);
+    }
+}
